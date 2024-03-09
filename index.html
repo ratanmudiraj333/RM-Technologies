@@ -1,38 +1,157 @@
 <html>
-<body>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+    .about
+    {
+      background-color:darkblue;
+      border-radius: 0;
+    }
 
-<h1 style = "text-align: center; height: 50px; background-color: black;color: whitesmoke;padding: 10px;">Ratan Mudiraj Projetcs</h1>
-<dl style = "background-color: cornflowerblue;height: 650px;width:fit-content;padding: 18px;margin-top: -24px;">
-  <h2>Project List: -</h2>
-  <h4>  
-  <dt style = "font-weight: bolder; font-size: x-large;">Memory Blaze</dt>
-  <dd style = "text-align: justify;">A game developed using HTML, CSS & JavaScript (Library: jQuery). Consisting 4 levels & each level consists of 6 different coloured circles. To start the game, we must click on the start option and the coloured circles start showing a pattern, we must follow the same pattern by clicking the coloured circles. If the pattern we selected is correct then we can go to the next level else we can check the pattern again and play the level again. If all levels are cleared, we can restart the game again.</dd>
-  <dd><p><a href="https://ratanmudiraj333.github.io/Ratans-Game-Memory-Blaze/">Project Link</a></p></dd>
-</h4>
-<h4>  
-    <dt style = "font-weight: bolder; font-size: x-large;">Ratan's Calci</dt>
-    <dd style = "text-align: justify;">A calculator developed using HTML, CSS & JavaScript (Library: jQuery).</dd>
-    <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Calci/">Project Link</a></p></dd>
-  </h4>
-  <h4>  
-    <dt style = "font-weight: bolder; font-size: x-large;">Tic Tac Toe</dt>
-    <dd style = "text-align: justify;">A game developed using HTML, CSS & JavaScript (Library: jQuery). In the landing page we must give the names of the 2 players and click on submit. Next, we are redirected to the game page. First move begins with player 1 selection and next move begins with player 2. The first player to achieve a horizontal / vertical / diagonal pattern wins the game.</dd>
-    <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Tic-Tac-Toe-Game/">Project Link</a></p></dd>
-  </h4>
+  </style>
+  
+  </head>
+<body style = "background-color:steelblue;">
+  <h1 style = "text-align: center; height: 80px; background-color:navy;color: whitesmoke;padding: 10px;">Ratan Mudiraj Portfolio</h1>
 
-  <h4>  
-    <dt style = "font-weight: bolder; font-size: x-large;">Fandom Pedia & Fandom Quiz</dt>
-    <dd style = "text-align: justify;">Fandom Pedia is a website to search information about Movie, Anime & Tv series characters developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS). Fandom Quiz is a quiz about Movie, Anime & Tv series developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS).</dd>
-    <dd><p><a href="https://ratanmudiraj333.github.io/Fandom/">Project Link</a></p></dd>
-  </h4>
+<div class="d-flex align-items-start" style = "position: relative; left:10px;">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button style = " text-align:center;font-size: x-large; color: whitesmoke;background-color:darkblue;position: relative; top:0px;" class="active btn about" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">About Me</button>
+    <button style = "text-align:center;border-radius: 0; font-size: x-large; background-color: maroon; color: whitesmoke;" class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Project List</button>
+    <button style = "text-align:left;border-radius: 0;   color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro1" type="button" role="tab" aria-controls="v-pills-pro1" aria-selected="false">Memory Blaze</button>
+    <button style = "text-align:left; border-radius: 0;  color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro2" type="button" role="tab" aria-controls="v-pills-pro2" aria-selected="false">Ratan's Calci</button>
+    <button style = "text-align:left; border-radius: 0;  color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro3" type="button" role="tab" aria-controls="v-pills-pro3" aria-selected="false">Tic-Tac-Toe</button>
+    <button style = "text-align:left; border-radius: 0;  color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro4" type="button" role="tab" aria-controls="v-pills-pro4" aria-selected="false">Fandom Pedia & Fandom Quiz</button>
+    <button style = "text-align:left; border-radius: 0;  color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro5" type="button" role="tab" aria-controls="v-pills-pro5" aria-selected="false">Covid Stats</button>
+    <button style = "text-align:left; border-radius: 0;  color: whitesmoke; background-color:firebrick;" class="btn" id="v-pills-pro6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pro6" type="button" role="tab" aria-controls="v-pills-pro6" aria-selected="false">Liable Observer</button>
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 600px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+          <dt style = "font-weight: bolder; font-size: x-large;">About Me</dt><br>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Ratan Mudiraj</dt>
+        <dd style = "text-align: justify;">A Software Engineer with 3 years of experience in Oracle PeopleSoft development
+pursuing to migrate into web development role or any other role where I can put my skills into practice. Also, practiced and worked on personal web development projects using different web technologies, open to learn new skills
+and adapt as per the role. Looking for an opportunity to be a part of an organization that would provide me ample opportunity to showcase and improve my skills, 
+decision making abilities and leadership qualities for personal and organization’s growth.</dd><br>
+<dt style = "font-weight: bolder; font-size: x-large;">Technical Skills: </dt>
+<ul>
+<li>HTML, CSS, Bootstrap, JavaScript, jQuery, ExpressJS, Node JS & React JS</li>
+<li>Oracle PeopleSoft (Application Designer) & BI Publisher</li>
+<li>Database (Oracle SQL Developer, MongoDB & MS SQL Server)</li>
+<li>Python</li>
+<li>Knowledge of C and C++</li>
+</ul><br>
 
-  <h4>  
-    <dt style = "font-weight: bolder; font-size: x-large;">Covid Stats</dt>
-    <dd style = "text-align: justify;">A covid dashboard which displays covid statistics of different countries around the world. Based on (No. of cases, No. of deaths, No. of recovery, Citizen’s vaccination rate, Covid Phases, Cities with high rate of virus & Infected and recovered rate) developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS).</dd>
-    <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Covid-Stats/">Project Link</a></p></dd>
-  </h4>
+<dt style = "font-weight: bolder; font-size: x-large;">Contact:</dt>
+<p><a href="https://www.linkedin.com/in/ratan-mudiraj-339478201">Linkedin Profile</a></p>
+          </h5>
+      </dl>
+    </div>
 
+    <div class="tab-pane fade" id="v-pills-pro1" role="tabpanel" aria-labelledby="v-pills-pro1-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 1660px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Memory Blaze</dt>
+        <dd style = "text-align: justify;">A game developed using HTML, CSS & JavaScript (Library: jQuery). Consisting 4 levels & each level consists of 6 different coloured circles. To start the game, we must click on the start option and the coloured circles start showing a pattern, we must follow the same pattern by clicking the coloured circles. If the pattern we selected is correct then we can go to the next level else we can check the pattern again and play the level again. If all levels are cleared, we can restart the game again.</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Ratans-Game-Memory-Blaze/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratans-Game-Memory-Blaze">Project Repository Link</a></p></dd>  
+        <dd><p>Screen shots</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro1-1.png" width="500" height="300"/></p></dd>
+        <dd><p>When incorrect pattern is given click check pattern to check the pattern again and complete the level</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro1-2.png" width="500" height="300"/></p></dd>
+        <dd><p>When correct pattern is given level is cleared and click start to begin the next level</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro1-3.png" width="500" height="300"/></p></dd>
+        <dd><p>All 4 levels are cleared the game is completed and restart option will appear to play the game again</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro1-4.png" width="500" height="300"/></p></dd>
+      </h5>
 </dl>
+    </div>
+    <div class="tab-pane fade" id="v-pills-pro2" role="tabpanel" aria-labelledby="v-pills-pro2-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 840px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Ratan's Calci</dt>
+        <dd style = "text-align: justify;">A calculator developed using HTML, CSS & JavaScript (Library: jQuery).</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Calci/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratan-Calci">Project Repository Link</a></p></dd> 
+        <dd><p>Screen shots</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro2-2.png" width="500" height="300" />..........<img src = "./images/pro2-3.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro2-4.png" width="500" height="300" />..........<img src = "./images/pro2-5.png" width="500" height="300"/></p></dd>       
+      </h5>
+</dl>
+    </div>
+
+    <div class="tab-pane fade" id="v-pills-pro3" role="tabpanel" aria-labelledby="v-pills-pro3-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 890px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Tic Tac Toe</dt>
+        <dd style = "text-align: justify;">A game developed using HTML, CSS & JavaScript (Library: jQuery). In the landing page we must give the names of the 2 players and click on submit. Next, we are redirected to the game page. First move begins with player 1 selection and next move begins with player 2. The first player to achieve a horizontal / vertical / diagonal pattern wins the game.</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Tic-Tac-Toe-Game/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratan-Tic-Tac-Toe-Game">Project Repository Link</a></p></dd>
+        <dd><p>Screen shots</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro3-1.png" width="500" height="300" />..........<img src = "./images/pro3-2.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro3-3.png" width="500" height="300" />..........<img src = "./images/pro3-4.png" width="500" height="300"/></p></dd>
+      </h5>
+</dl>
+    </div>
+
+    <div class="tab-pane fade" id="v-pills-pro4" role="tabpanel" aria-labelledby="v-pills-pro4-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 1600px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Fandom Pedia & Fandom Quiz</dt>
+        <dd style = "text-align: justify;">Fandom Pedia is a website to search information about Movie, Anime & Tv series characters developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS). Fandom Quiz is a quiz about Movie, Anime & Tv series developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS).</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Fandom-Pedia-Quiz/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Fandom-Pedia-Quiz">Project Repository Link</a></p></dd>
+        <dd><p>Screen shots</p></dd>
+        <dd><p>Fandom Pedia</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro4-1.png" width="500" height="300" />..........<img src = "./images/pro4-2.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro4-3.png" width="500" height="300" />..........<img src = "./images/pro4-4.png" width="500" height="300"/></p></dd>
+        <dd><p>Fandom Quiz</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro4-5.png" width="500" height="300"/>..........<img src = "./images/pro4-6.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro4-7.png" width="500" height="300"/></p></dd>
+      </h5>
+</dl>
+    </div>
+   
+    <div class="tab-pane fade" id="v-pills-pro5" role="tabpanel" aria-labelledby="v-pills-pro5-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 1570px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Covid Stats</dt>
+        <dd style = "text-align: justify;">A covid dashboard which displays covid statistics of different countries around the world. Based on (No. of cases, No. of deaths, No. of recovery, Citizen’s vaccination rate, Covid Phases, Cities with high rate of virus & Infected and recovered rate). Completely responsive webpage for different screen sizes. Developed using HTML, CSS (Library: Bootstrap) & JavaScript (Library: React JS).</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-Covid-Stats/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratan-Covid-Stats">Project Repository Link</a></p></dd>
+        <dd><p>Screen shots</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro5-1.png" width="500" height="300" />..........<img src = "./images/pro5-2.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro5-3.png" width="500" height="300" /></p></dd>
+        <dd><p>Mobile view</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro5-4.png" width="500" height="600"/>..........<img src = "./images/pro5-5.png" width="500" height="600"/></p></dd>
+      </h5>
+</dl>
+    </div>    
+
+    <div class="tab-pane fade" id="v-pills-pro6" role="tabpanel" aria-labelledby="v-pills-pro6-tab" tabindex="0">
+      <dl style = "color: whitesmoke; background-color:maroon;height: 1370px;width:1200px;padding: 18px;margin-top: -3px; margin-left: 50px; border: solid black;">
+        <h5>  
+        <dt style = "font-weight: bolder; font-size: x-large;">Liable Observer</dt>
+        <dd style = "text-align: justify;">Liable Observer is a portal where citizens can check liable elements around them.Liable elements are categorized into 3 elements(Pollution, Traffic Jam & Accident prone areas) Citizens can submit new observations under submit observation tab and select the liability type, the observation will be displayed under the tab as per the type we selected & Administrator will provide update on the status of the liability and can also delete observations. Developed using MERN stack(MongoDB, ExpressJS, ReactJS & NodeJS). Backend is deployed using github & render software and frontend is deployed using github.</dd>
+        <dd><p><a href="https://ratanmudiraj333.github.io/Ratan-liable-observer/">Project Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratan-liable-observer">Project Frontend Repository Link</a></p></dd>
+        <dd><p><a href="https://github.com/ratanmudiraj333/Ratan-liable-observer-backend">Project Backend Repository Link</a></p></dd>
+        <dd><p>Screen shots</p></dd>
+        <dd><p>Universal Observer Access</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro6-1.png" width="500" height="300" />..........<img src = "./images/pro6-2.png" width="500" height="300"/></p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro6-3.png" width="500" height="300" />..........<img src = "./images/pro6-4.png" width="500" height="300"/></p></dd>
+        <dd><p>Administrator Access</p></dd>
+        <dd style = "color: maroon;"><p><img src = "./images/pro6-5.png" width="500" height="300" />..........<img src = "./images/pro6-6.png" width="500" height="300"/></p></dd>
+      </h5>
+</dl>
+    </div> 
+
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+  </div>
+</div>
 
 </body>
 </html>
